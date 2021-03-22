@@ -11,6 +11,15 @@
         "@sanity/desk-tool",
         "@sanity/google-maps-input"
     ],
+    "api": {
+        "projectId": "zymjgahi",
+        "dataset": "production"
+    },
+    "env": {
+        "development": {
+            "plugins": ["@sanity/vision"]
+        }
+    },
     "parts": [
         {
             "name": "part:@sanity/base/schema",
@@ -20,14 +29,5 @@
             "name": "part:@sanity/desk-tool/structure",
             "path": "./Sidebar.tsx"
         }
-    ],
-    "env": {
-        "development": {
-            "plugins": ["@sanity/vision"]
-        }
-    },
-    "api": {
-        "projectId": "zymjgahi",
-        "dataset": "production"
-    }
+    ]
 }
