@@ -6,7 +6,9 @@ import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event';
 import { formatMonet } from '../helpers';
 
 export const PriceInput: React.FC<PriceInputProps> = props => {
-    const { type, value, onChange, inputComponent } = props;
+    const {
+        type, value, onChange, inputComponent,
+    } = props;
 
     const handleChange = event => onChange(createPatchFrom(event.target.value));
 
